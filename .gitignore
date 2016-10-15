@@ -3,4 +3,7 @@ node_modules/
 bower_components/
 
 # Generated files
+.DS_Store
+.idea/
 dist/
+
