@@ -49,6 +49,18 @@ nav li a {
   display: block;
 }
 
+.patient-stub {
+  margin: 1%;
+  padding: 10px 5px;
+  border: 2px solid #42B6E3;
+}
+
+.patient-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
 @media (max-width: 720px) {
   #container {
     margin: 0 auto;
