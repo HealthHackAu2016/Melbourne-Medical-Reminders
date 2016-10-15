@@ -37,18 +37,6 @@ header h1 {
   font-size: 24px;
 }
 
-nav {
-  display: inline-block;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li a {
-  display: block;
-}
-
 .patient-stub {
   margin: 1%;
   padding: 10px 5px;
