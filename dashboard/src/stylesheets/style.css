@@ -68,6 +68,19 @@ header h1 {
   height: auto;
 }
 
+ul.patient-permissions {
+  padding-left: 0;
+  list-style: none;
+}
+
+.patient-permissions .has-permission {
+  color: #090;
+}
+
+.patient-permissions .disabled {
+  color: #900;
+}
+
 @media (max-width: 720px) {
   #container {
     margin: 0 auto;
