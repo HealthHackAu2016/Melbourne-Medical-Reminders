@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #42B6E3;
+}
+
+body {
+  background: url('../images/background.png');
+  background-repeat: repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  max-width: 1280px;
+  margin: 40px auto;
+  background-color: #FFF;
+}
+
+header h1 {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  #container {
+    margin: 0 auto;
+  }
+}

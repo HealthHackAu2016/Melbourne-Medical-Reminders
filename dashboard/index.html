@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard - Lorne Community Hospital Medical Reminders</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body>
+    <section id="container">
+      <header>
+        <img src="images/logo.png" alt="lorne community hospital logo" />
+        <h1>Dashboard - Medical Reminders</h1>
+      </header>
+      <main>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#calendar" aria-controls="calendar" role="tab" data-toggle="tab">Calendar</a>
+          </li>
+          <li role="presentation" data-toggle="tab">
+            <a href="#patient-list" aria-controls="patient-list" role="tab" data-toggle="tab">Patients</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="calendar">
+            <h2>Calendar</h2>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="patient-list">
+            <h2>Patients</h2>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>
