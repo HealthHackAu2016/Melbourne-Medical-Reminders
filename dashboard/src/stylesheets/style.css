@@ -37,6 +37,10 @@ header h1 {
   font-size: 24px;
 }
 
+.search-form {
+  margin: 20px 0;
+}
+
 .patient-stub {
   margin: 1%;
   padding: 20px 5px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchForm from './SearchForm';
 import PatientStub from './PatientStub';
 
 // Dummy data
@@ -70,15 +71,43 @@ var patients = [
 ];
 
 export default class PatientList extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      patients: patients
+    };
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  onChange(searchTerm) {
+    this.setState({
+      searchTerm: searchTerm
+    });
+  }
+
+  onSubmit() {
+    var results = patients.filter((patient) => {
+      return patient.name.toLowerCase().includes(
+        this.state.searchTerm.toLowerCase()
+      );
+    });
+    this.setState({
+      patients: results
+    });
+  }
+
   render() {
-    var patientListItems = patients.map((patient) => {
+    var patientListItems = this.state.patients.map((patient) => {
       return <PatientStub key={patient._id} patient={patient} />
     });
 
     return (
       <div>
         <h2>Patients</h2>
-        {patientListItems}
+        <SearchForm onChange={this.onChange}
+          onSubmit={this.onSubmit} />
+        {patientListItems.length > 0 ? patientListItems : 'No patients found.'}
       </div>
     );
   }
