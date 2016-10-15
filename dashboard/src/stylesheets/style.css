@@ -28,7 +28,7 @@ body {
 }
 
 header img {
-  margin-right: 10%;
+  margin-right: 40px;
 }
 
 header h1 {
@@ -39,8 +39,18 @@ header h1 {
 
 .patient-stub {
   margin: 1%;
-  padding: 10px 5px;
-  border: 2px solid #42B6E3;
+  padding: 20px 5px;
+  color: #000;
+  border: 1px solid #42B6E3;
+  border-radius: 5px;
+}
+
+.patient-stub:hover {
+  background-color: rgba(66, 182, 227, 0.1);
+}
+
+.patient-stub dl {
+  margin-bottom: 0;
 }
 
 .patient-photo img {
