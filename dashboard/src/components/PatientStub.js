@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class PatientStub extends React.Component {
   render() {
@@ -6,13 +7,13 @@ export default class PatientStub extends React.Component {
     return (
       <div className='patient-stub row'>
         <div className='patient-photo col-xs-3 col-md-1'>
-          <img src={patient.photo} />
+          <img src={patient.photo} alt='patient photo' />
         </div>
         <div className='col-xs-9 col-md-11'>
           <dl className='dl-horizontal'>
             <dt>Name</dt>
             <dd>{patient.name}</dd>
-            <dt>Ph no.</dt>
+            <dt>Phone no.</dt>
             <dd>{patient.phone_no}</dd>
             <dt>Permissions</dt>
             <dd>
@@ -23,6 +24,7 @@ export default class PatientStub extends React.Component {
               }
             </dd>
           </dl>
+          <Link to={'/patient/' + patient._id}>View profile</Link>
         </div>
       </div>
     );
