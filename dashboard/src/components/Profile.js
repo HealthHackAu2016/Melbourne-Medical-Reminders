@@ -133,6 +133,10 @@ export default class Profile extends React.Component {
                   <button className='btn btn-primary' type='button'>Save changes</button>
                 </div>
               </div>
+              <h3>Calendar</h3>
+              <div>
+                <iframe src="https://calendar.google.com/calendar/embed?src=cakesy%40gmail.com&ctz=Australia/Sydney" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+              </div>
             </div>
           </div>
           <Link to='/'>Back to patient list</Link>
