@@ -37,6 +37,10 @@ header h1 {
   font-size: 24px;
 }
 
+.actions {
+  text-align: right;
+}
+
 .search-form {
   margin: 20px 0;
 }

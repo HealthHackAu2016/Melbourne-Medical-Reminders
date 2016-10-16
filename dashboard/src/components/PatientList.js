@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import SearchForm from './SearchForm';
 import PatientStub from './PatientStub';
 
@@ -105,6 +106,11 @@ export default class PatientList extends React.Component {
     return (
       <div>
         <h2>Patients</h2>
+        <div className='actions'>
+          <Link className='btn btn-primary' to='/patient/new'>
+            <i className='fa fa-user-plus' aria-hidden={true}></i> Add patient
+          </Link>
+        </div>
         <SearchForm onChange={this.onChange}
           onSubmit={this.onSubmit} />
         {patientListItems.length > 0 ? patientListItems : 'No patients found.'}
