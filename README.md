@@ -26,19 +26,12 @@ Help us help the nearly half a million Australians aged 85 years and over mainta
 * A clear contact list display with a phone call made at the touch of the screen
 
 # Installation instructions
-## Dashboard API
+## Dashboard
 ```
 mkdir data
 mongod -dbpath=data
-cd api/
 npm install
 npm start
-```
-## Front-end
-```
-npm install
-npm run dev
-Start local server and open index.html in browser
 ```
 
 ## iOS app
