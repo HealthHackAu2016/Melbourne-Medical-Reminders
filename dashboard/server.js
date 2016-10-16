@@ -47,6 +47,7 @@ router.route('/patients/:id/permissions')
         });
     });
 app.use('/api', router);
+app.use(express.static('public'));
 
 // Seed
 Patient.find((err, patients) => {
