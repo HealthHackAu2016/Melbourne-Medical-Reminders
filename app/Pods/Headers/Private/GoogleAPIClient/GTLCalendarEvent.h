@@ -1,0 +1,5 @@
+XSym
+0078
+e8a3431e7dec626921d3a31c45b1fcc5
+../../../GoogleAPIClient/Source/Services/Calendar/Generated/GTLCalendarEvent.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

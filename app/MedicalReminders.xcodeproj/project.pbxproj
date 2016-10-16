@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BB9236C1DB1AE7000D5675D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9236B1DB1AE7000D5675D /* main.m */; };
+		2BB9236F1DB1AE7000D5675D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9236E1DB1AE7000D5675D /* AppDelegate.m */; };
+		2BB923721DB1AE7000D5675D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB923711DB1AE7000D5675D /* ViewController.m */; };
+		2BB923751DB1AE7000D5675D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB923731DB1AE7000D5675D /* Main.storyboard */; };
+		2BB923771DB1AE7000D5675D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB923761DB1AE7000D5675D /* Assets.xcassets */; };
+		2BB9237A1DB1AE7000D5675D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB923781DB1AE7000D5675D /* LaunchScreen.storyboard */; };
+		451CE5D972C81EFA66B08D65 /* libPods-MedicalReminders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C191E50FDF92496F0E1AA575 /* libPods-MedicalReminders.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BB923671DB1AE7000D5675D /* MedicalReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB9236B1DB1AE7000D5675D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BB9236D1DB1AE7000D5675D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BB9236E1DB1AE7000D5675D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BB923701DB1AE7000D5675D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BB923711DB1AE7000D5675D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BB923741DB1AE7000D5675D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BB923761DB1AE7000D5675D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BB923791DB1AE7000D5675D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BB9237B1DB1AE7000D5675D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F5BEE24D60EB4217133827 /* Pods-MedicalReminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalReminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalReminders/Pods-MedicalReminders.release.xcconfig"; sourceTree = "<group>"; };
+		93D730CC643654CA57E8DF0B /* Pods-MedicalReminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalReminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalReminders/Pods-MedicalReminders.debug.xcconfig"; sourceTree = "<group>"; };
+		C191E50FDF92496F0E1AA575 /* libPods-MedicalReminders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MedicalReminders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BB923641DB1AE7000D5675D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451CE5D972C81EFA66B08D65 /* libPods-MedicalReminders.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BB9235E1DB1AE7000D5675D = {
+			isa = PBXGroup;
+			children = (
+				2BB923691DB1AE7000D5675D /* MedicalReminders */,
+				2BB923681DB1AE7000D5675D /* Products */,
+				F344895947EFCA18A1D21999 /* Pods */,
+				B2BEA5BE11E235BD990FB1ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BB923681DB1AE7000D5675D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BB923671DB1AE7000D5675D /* MedicalReminders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BB923691DB1AE7000D5675D /* MedicalReminders */ = {
+			isa = PBXGroup;
+			children = (
+				2BB9236D1DB1AE7000D5675D /* AppDelegate.h */,
+				2BB9236E1DB1AE7000D5675D /* AppDelegate.m */,
+				2BB923701DB1AE7000D5675D /* ViewController.h */,
+				2BB923711DB1AE7000D5675D /* ViewController.m */,
+				2BB923731DB1AE7000D5675D /* Main.storyboard */,
+				2BB923761DB1AE7000D5675D /* Assets.xcassets */,
+				2BB923781DB1AE7000D5675D /* LaunchScreen.storyboard */,
+				2BB9237B1DB1AE7000D5675D /* Info.plist */,
+				2BB9236A1DB1AE7000D5675D /* Supporting Files */,
+			);
+			path = MedicalReminders;
+			sourceTree = "<group>";
+		};
+		2BB9236A1DB1AE7000D5675D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BB9236B1DB1AE7000D5675D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2BEA5BE11E235BD990FB1ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C191E50FDF92496F0E1AA575 /* libPods-MedicalReminders.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F344895947EFCA18A1D21999 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93D730CC643654CA57E8DF0B /* Pods-MedicalReminders.debug.xcconfig */,
+				66F5BEE24D60EB4217133827 /* Pods-MedicalReminders.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BB923661DB1AE7000D5675D /* MedicalReminders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB9237E1DB1AE7000D5675D /* Build configuration list for PBXNativeTarget "MedicalReminders" */;
+			buildPhases = (
+				2594B09CDEAE57E5F5EC0AF5 /* [CP] Check Pods Manifest.lock */,
+				2BB923631DB1AE7000D5675D /* Sources */,
+				2BB923641DB1AE7000D5675D /* Frameworks */,
+				2BB923651DB1AE7000D5675D /* Resources */,
+				9681890960829D2FE18554E1 /* [CP] Embed Pods Frameworks */,
+				17AC79A24472693130CBF95C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedicalReminders;
+			productName = MedicalReminders;
+			productReference = 2BB923671DB1AE7000D5675D /* MedicalReminders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BB9235F1DB1AE7000D5675D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "John Lyons";
+				TargetAttributes = {
+					2BB923661DB1AE7000D5675D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MR2287782X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2BB923621DB1AE7000D5675D /* Build configuration list for PBXProject "MedicalReminders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BB9235E1DB1AE7000D5675D;
+			productRefGroup = 2BB923681DB1AE7000D5675D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BB923661DB1AE7000D5675D /* MedicalReminders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BB923651DB1AE7000D5675D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB9237A1DB1AE7000D5675D /* LaunchScreen.storyboard in Resources */,
+				2BB923771DB1AE7000D5675D /* Assets.xcassets in Resources */,
+				2BB923751DB1AE7000D5675D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17AC79A24472693130CBF95C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalReminders/Pods-MedicalReminders-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2594B09CDEAE57E5F5EC0AF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9681890960829D2FE18554E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalReminders/Pods-MedicalReminders-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BB923631DB1AE7000D5675D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB923721DB1AE7000D5675D /* ViewController.m in Sources */,
+				2BB9236F1DB1AE7000D5675D /* AppDelegate.m in Sources */,
+				2BB9236C1DB1AE7000D5675D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BB923731DB1AE7000D5675D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BB923741DB1AE7000D5675D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BB923781DB1AE7000D5675D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BB923791DB1AE7000D5675D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BB9237C1DB1AE7000D5675D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BB9237D1DB1AE7000D5675D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BB9237F1DB1AE7000D5675D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D730CC643654CA57E8DF0B /* Pods-MedicalReminders.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MR2287782X;
+				INFOPLIST_FILE = MedicalReminders/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MedicalReminders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BB923801DB1AE7000D5675D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F5BEE24D60EB4217133827 /* Pods-MedicalReminders.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MR2287782X;
+				INFOPLIST_FILE = MedicalReminders/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MedicalReminders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BB923621DB1AE7000D5675D /* Build configuration list for PBXProject "MedicalReminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB9237C1DB1AE7000D5675D /* Debug */,
+				2BB9237D1DB1AE7000D5675D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB9237E1DB1AE7000D5675D /* Build configuration list for PBXNativeTarget "MedicalReminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB9237F1DB1AE7000D5675D /* Debug */,
+				2BB923801DB1AE7000D5675D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BB9235F1DB1AE7000D5675D /* Project object */;
+}

@@ -1,0 +1,5 @@
+XSym
+0078
+5349969431d462087b03df7c2c50606a
+../../../GoogleAPIClient/Source/Services/Calendar/Generated/GTLQueryCalendar.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

@@ -1,0 +1,5 @@
+XSym
+0082
+71d48980838e56dd6263a4c4ae781dd4
+../../../GoogleAPIClient/Source/Services/Calendar/Generated/GTLCalendarConstants.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

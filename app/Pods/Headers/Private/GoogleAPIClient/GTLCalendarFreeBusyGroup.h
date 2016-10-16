@@ -1,0 +1,5 @@
+XSym
+0086
+9d7b4f940670ab952c779efde8750728
+../../../GoogleAPIClient/Source/Services/Calendar/Generated/GTLCalendarFreeBusyGroup.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

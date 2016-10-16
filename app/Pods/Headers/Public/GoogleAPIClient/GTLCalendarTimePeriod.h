@@ -1,0 +1,5 @@
+XSym
+0083
+160da20a0296986c5ed8ddaa6bfe3f92
+../../../GoogleAPIClient/Source/Services/Calendar/Generated/GTLCalendarTimePeriod.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

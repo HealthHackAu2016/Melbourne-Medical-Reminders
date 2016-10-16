@@ -1,0 +1,5 @@
+XSym
+0079
+e2c0cbf090e497cc45f5086c2a690d37
+../../../GoogleAPIClient/Source/Services/Calendar/Generated/GTLCalendarColors.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
