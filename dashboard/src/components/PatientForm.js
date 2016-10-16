@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default class AddPatientForm extends React.Component {
+export default class PatientForm extends React.Component {
   constructor() {
     super();
     this.state = {
+      patient: {},
       photo: ''
     }
     this.handleFileChange = this.handleFileChange.bind(this);
@@ -25,7 +26,7 @@ export default class AddPatientForm extends React.Component {
   render() {
     return (
       <div>
-        <h2>Add Patient</h2>
+        <h2>{this.props.params.patientId ? 'Edit' : 'Add'} Patient</h2>
         <form>
           <div className='row'>
             <div className='col-sm-8'>

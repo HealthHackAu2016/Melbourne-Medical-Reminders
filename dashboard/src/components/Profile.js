@@ -97,6 +97,13 @@ export default class Profile extends React.Component {
       return (
         <div className='profile'>
           <h2>{this.state.patient.name}</h2>
+
+          <div className='actions'>
+            <Link to={'/patient/edit/' + this.props.params.patientId}>
+              <i className='fa fa-pencil' aria-hidden='true'></i> Edit patient
+            </Link>
+          </div>
+
           <div className='row'>
             <div className='col-xs-4 col-md-3'>
               <a target='_blank' href={this.state.patient.photo}><img src={this.state.patient.photo} alt='patient photo' /></a>
