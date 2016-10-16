@@ -2,23 +2,34 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+const seed = require('./app/seed');
+
 // Config
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+// Models
+mongoose.connect('mongodb://localhost:27017');
+const Patient = require('./app/models/patient');
+
 // Router
 const router = express.Router();
-router.get('/', (req, res) => {
-    res.json({
-        message: `Melbourne Medical Reminders`
+router.route('/patients')
+    .get((req, res) => {
+        Patient.find((err, patients) => {
+            if (err) res.send(err);
+            res.json(patients);
+        });
     });
-});
 app.use('/api', router);
 
-// Database
-mongoose.connect('mongodb://localhost:27017');
+// Seed
+Patient.find((err, patients) => {
+    if (err) console.log(err);
+    if (patients.length == 0) seed();
+});
 
 // Server
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 app.listen(port);
