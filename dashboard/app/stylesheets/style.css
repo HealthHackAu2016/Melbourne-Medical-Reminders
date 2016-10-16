@@ -77,6 +77,13 @@ ul.patient-permissions {
   list-style: none;
 }
 
+.fa.fa-spinner {
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 .patient-permissions .has-permission {
   color: #090;
 }
@@ -88,5 +95,15 @@ ul.patient-permissions {
 @media (max-width: 720px) {
   #container {
     margin: 0 auto;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

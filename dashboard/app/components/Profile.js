@@ -5,8 +5,12 @@ export default class Profile extends React.Component {
   constructor() {
     super();
     this.state = {
-      patient: null
+      patient: null,
+      saving: false
     };
+
+    this.onChange = this.onChange.bind(this);
+    this.onSave = this.onSave.bind(this);
   }
 
   componentDidMount() {
@@ -15,9 +19,42 @@ export default class Profile extends React.Component {
       url: 'http://localhost:8080/api/patients/' + this.props.params.patientId
     })
     .done((response) => {
-      console.log(response);
       this.setState({
         patient: response
+      });
+    })
+  }
+
+  onChange() {
+    var patient = this.state.patient;
+    patient.permissions = {
+      MAKE_CALL: this.refs['permission-make-call'].checked,
+      WEEKLY_VIEW: this.refs['permission-weekly-view'].checked,
+      DAILY_VIEW: this.refs['permission-daily-view'].checked
+    }
+
+    this.setState({
+      patient: patient
+    });
+  }
+
+  // Update patient's permission
+  onSave() {
+    this.setState({
+      saving: true
+    });
+
+    $.ajax({
+      url: `http://localhost:8080/api/patients/${this.state.patient._id}/permissions`,
+      method: 'PUT',
+      data: this.state.patient.permissions
+    })
+    .done((response) => {
+      var patient = this.state.patient;
+      patient.permissions = response;
+      this.setState({
+        patient: patient,
+        saving: false
       });
     })
   }
@@ -64,16 +101,36 @@ export default class Profile extends React.Component {
               <h3>Permissions</h3>
               <div className='permissions'>
                 <div>
-                  <input type='checkbox' checked={this.state.patient.permissions.MAKE_CALL}/> Can make calls
+                  <input type='checkbox'
+                    id='permission-make-call'
+                    ref='permission-make-call'
+                    checked={this.state.patient.permissions.MAKE_CALL}
+                    onChange={this.onChange} />
+                  <label htmlFor='permission-make-call'>Can make calls</label>
                 </div>
                 <div>
-                  <input type='checkbox' checked={this.state.patient.permissions.WEEKLY_VIEW}/> Can see weekly view
+                  <input type='checkbox'
+                    id='permission-weekly-view'
+                    ref='permission-weekly-view'
+                    checked={this.state.patient.permissions.WEEKLY_VIEW}
+                    onChange={this.onChange} />
+                  <label htmlFor='permission-weekly-view'>Can see weekly view</label>
                 </div>
                 <div>
-                  <input type='checkbox' checked={this.state.patient.permissions.DAILY_VIEW}/> Can see daily view
+                  <input type='checkbox'
+                    id='permission-daily-view'
+                    ref='permission-daily-view'
+                    checked={this.state.patient.permissions.DAILY_VIEW}
+                    onChange={this.onChange} />
+                  <label htmlFor='permission-daily-view'>Can see daily view</label>
                 </div>
                 <div>
-                  <button className='btn btn-primary' type='button'>Save changes</button>
+                  <button onClick={this.onSave}
+                    className='btn btn-primary'
+                    type='button'
+                    disabled={this.state.saving}>
+                    Save changes
+                  </button> {this.state.saving ? <i className='fa fa-spinner' aria-hidden='true'></i> : ''}
                 </div>
               </div>
               <h3>Calendar</h3>
