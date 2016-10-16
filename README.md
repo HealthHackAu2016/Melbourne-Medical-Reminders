@@ -40,3 +40,10 @@ npm install
 npm run dev
 Start local server and open index.html in browser
 ```
+
+## iOS app
+```
+use xcode to load MedicalReminders.xcworkspace
+add your calender id into ViewController.m
+run
+```
