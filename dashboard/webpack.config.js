@@ -23,8 +23,11 @@ var config = {
     },
     plugins: [
         new CopyWebpackPlugin([
-            {from: './index.html'},
-            {from: './app/stylesheets/style.css'}
+            // Entry
+            {from: 'index.html'},
+            // Assets
+            {from: 'app/images', to: 'images'},
+            {from: 'app/stylesheets', to: 'stylesheets'}
         ])
     ]
 };
