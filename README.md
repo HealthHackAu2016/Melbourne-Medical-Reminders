@@ -24,3 +24,10 @@ Help us help the nearly half a million Australians aged 85 years and over mainta
 * An easy alert system with a reminders for medications
 * Ability to dial the client and have a ‘facetime’ conversation
 * A clear contact list display with a phone call made at the touch of the screen
+
+# Installation instructions
+```
+npm install
+npm run dev
+Open index.html in browser
+```
