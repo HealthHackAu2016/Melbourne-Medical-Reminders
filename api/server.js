@@ -22,6 +22,28 @@ router.route('/patients')
             res.json(patients);
         });
     });
+router.route('/patients/:id')
+    .get((req, res) => {
+        Patient.findById(req.params.id, (err, patient) => {
+            if (err) res.send(err);
+            res.json(patient);
+        });
+    });
+router.route('/patients/:id/permissions')
+    .put((req, res) => {
+        Patient.findById(req.params.id, (err, patient) => {
+            if (err) res.send(err);
+
+            patient.permissions = req.body;
+
+            patient.save((err) => {
+                if (err) res.send(err);
+                Patient.findById(req.params.id, (err, patient) => {
+                    res.json(patient.permissions);
+                });
+            });
+        });
+    });
 app.use('/api', router);
 
 // Seed
